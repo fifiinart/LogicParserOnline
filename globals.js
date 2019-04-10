@@ -24,7 +24,7 @@ function center(value, length, fill = " ") {
     .padEnd(value.length + start + end, fill);
 }
 
-module.exports = {
+export {
   valueIn,
   range,
   center

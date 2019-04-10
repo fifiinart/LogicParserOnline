@@ -1,7 +1,7 @@
-const errors = require("./errors.js");
-const LogicVar = require("./var.js");
+import logicErrors from "./errors.js";
+import LogicVar from "./var.js";
 
-module.exports = class LogicNode {
+export default class LogicNode {
 
   constructor(operator = null, left = null, right = null, hasNot = false, operatorType = null, nodeObj = null) {
     // Sets operator to a range of 0 to 6

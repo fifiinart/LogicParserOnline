@@ -28,7 +28,8 @@ class ValueError extends Error {
     this.name = "ValueError";
   }
 }
-module.exports = {
+let logicErrors;
+export default logicErrors = {
   UnbalancedParentheses,
   MissingTruthValue,
   OperatorMismatch,

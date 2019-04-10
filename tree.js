@@ -1,11 +1,11 @@
-const errors = require("./errors.js");
-const LogicNode = require("./node.js");
-const {
+import logicErrors from "./errors.js";
+import LogicNode from "./node.js";
+import {
   valueIn,
   range,
   center
-} = require("./globals.js")
-operators = {
+} from "./globals.js";
+let operators = {
   "NAND": "|",
   "nand": "|",
 
@@ -35,7 +35,7 @@ operators = {
   "->": ">"
 }
 
-module.exports = class LogicTree {
+export default class LogicTree {
 
   constructor(expression) {
     this.expression = expression;

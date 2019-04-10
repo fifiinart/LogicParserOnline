@@ -1,6 +1,5 @@
-const logicErrors = require("./errors.js");
-
-module.exports = class LogicVar {
+import logicErrors from "./errors.js"
+export class LogicVar {
 
   constructor(value = null, hasNot = null, operatorType = null, nodeObj = null) {
     [this.pseudo, this.discrete, this.java] = [...Array(3)
